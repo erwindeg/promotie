@@ -44,27 +44,40 @@
 			<div class="slides">
 			
 				<section>
+					<h1>Unraveling the Web of Cognitions</h1>
+					<h2>Cognitive biases and fear-related behavior in childhood anxiety</h2>
+					<aside class="notes">
+					</aside>
+				</section>
+				
+			
+				<section>
 					<img src="img/denkprocessen.svg" />
 					<aside class="notes">
 					</aside>
 				</section>
 
 				
-				<section data-state="showProblem">
+				<section>
 					<div style="position: relative;">
-						<div id="anna"></div>
-						<div id="spin"></div>
-						<div id="angstreactie"></div>
-						<div id="wolk"></div>
-						<div id="hond"></div>
+						<div class="fragment" id="anna"><img src="img/meisje.svg" /></div>
+						<div class="fragment" id="spin"></div>
+						<div class="fragment" id="angstreactie"></div>
+						<div class="fragment" id="wolk"></div>
+						<div class="fragment" id="pijlen"></div>
+						<div class="fragment" id="pijlterug"></div>
+						<div class="fragment" id="hond"></div>
 					</div>
+					<!--
 					<ol>
-						<li  class="fragment invisible" id="anna"></li>
+						<li  class="fragment" id="meisje"></li>
 						<li  class="fragment invisible" id="spin"></li>
 						<li  class="fragment invisible" id="angstreactie"></li>
 						<li  class="fragment invisible" id="wolk"></li>
+						<li  class="fragment invisible" id="pijlen"></li>
+						<li  class="fragment invisible" id="pijlterug"></li>
 						<li  class="fragment invisible" id="hond"></li>
-					</ol>
+					</ol>-->
 				</section>
 				
 				<section>
@@ -116,12 +129,12 @@
 			Reveal.addEventListener( 'fragmentshown', function( event ) {
 				// event.fragment = the fragment DOM element
 				if(event.fragment.id == 'anna'){
-					$('#anna').lazylinepainter( 
+					/*$('#anna').lazylinepainter( 
 					 {
 						"svgData": anna,
 						"strokeWidth": 2,
 						"strokeColor": "#FFFFFF"
-					}).lazylinepainter('paint');
+					}).lazylinepainter('paint');*/
 					console.log(event.fragment.id);
 				} else if(event.fragment.id == 'spin'){
 					$('#spin').lazylinepainter( 
@@ -147,7 +160,23 @@
 						"strokeColor": "#FFFFFF"
 					}).lazylinepainter('paint');
 					console.log(event.fragment.id);
-				}	else if(event.fragment.id == 'hond'){
+				} else if(event.fragment.id == 'pijlen'){
+					$('#pijlen').lazylinepainter( 
+					 {
+						"svgData": pijlen,
+						"strokeWidth": 2,
+						"strokeColor": "#FFFFFF"
+					}).lazylinepainter('paint');
+					console.log(event.fragment.id);
+				} else if(event.fragment.id == 'pijlterug'){
+					$('#pijlterug').lazylinepainter( 
+					 {
+						"svgData": pijlterug,
+						"strokeWidth": 2,
+						"strokeColor": "#FFFFFF"
+					}).lazylinepainter('paint');
+					console.log(event.fragment.id);
+				} else if(event.fragment.id == 'hond'){
 					$('#hond').lazylinepainter( 
 					 {
 						"svgData": hond,

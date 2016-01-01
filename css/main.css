@@ -9,13 +9,21 @@
 	display: none;
 }
 
-#anna, #spin, #angstreactie,#wolk,#hond {
+#spin, #angstreactie,#wolk,#pijlen,#pijlterug,#hond {
     position: absolute;
     top:50%;
     left: 38%;
     margin: -300px 0 0 -400px;
 }
 
+#anna {
+    position: absolute;
+    top: 180px;
+    left: 720px;
+    margin: -300px 0 0 -400px;
+	width: 22%;
+	height: auto;
+}
 
 /* ==========================================================================
    Media Queries
