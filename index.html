@@ -68,6 +68,7 @@
 						<div class="fragment" id="spin"></div>
 						<div class="fragment" id="angstreactie"></div>
 						<div class="fragment" id="wolk"></div>
+						<div class="fragment" id="spineng"></div>
 						<div class="fragment" id="pijlen"></div>
 						<div class="fragment" id="pijlterug"></div>
 						<div class="fragment" id="hond"></div>
@@ -160,6 +161,14 @@
 					$('#wolk').lazylinepainter( 
 					 {
 						"svgData": wolk,
+						"strokeWidth": 2,
+						"strokeColor": "#FFFFFF"
+					}).lazylinepainter('paint');
+					console.log(event.fragment.id);
+				}  else if(event.fragment.id == 'spineng'){
+					$('#spineng').lazylinepainter( 
+					 {
+						"svgData": spineng,
 						"strokeWidth": 2,
 						"strokeColor": "#FFFFFF"
 					}).lazylinepainter('paint');

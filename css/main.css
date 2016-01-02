@@ -9,7 +9,7 @@
 	display: none;
 }
 
-#spin, #angstreactie,#wolk,#pijlen,#pijlterug,#hond {
+#spin, #angstreactie,#wolk,#spineng,#pijlen,#pijlterug,#hond {
     position: absolute;
     top:50%;
     left: 38%;
